@@ -1,0 +1,392 @@
+@media screen and (min-width: 550px) {
+	// TODO: 2 columns layout
+}
+
+@media screen and (min-width: 990px) {
+	// 2 columns layout
+	body {
+		div#page > header {
+			background: url('../images/olympia2012.jpg') no-repeat;
+		}
+		margin:0;
+		padding:0;
+		background: url('../images/bg.jpg') 50% 0 no-repeat fixed;
+		text-align: center;
+		div#page {
+			@include clearfix;
+			margin: 35px auto 50px auto;
+			width: 990px;
+			background: #fff;
+			box-shadow: rgb(136, 136, 136) 0px 4px 10px 0px;
+			> header {
+				text-align:center;
+				background-position: 25px 42px;
+				div#top {
+					@include clearfix;
+					width: 940px;
+					padding: 0 0 8px 0;
+					margin: 0 25px;
+					border-bottom: 1px dotted rgb(217, 217, 217);
+					span ul {
+						list-style: none;
+						display:inline;
+						li {
+							float: left;
+							@include header-top-text;
+							font-size: 14px;
+						}
+						li:nth-child(1) {
+							padding: 0 5px 0 0;
+						}
+						li:nth-child(2) {
+							padding: 0 0 0 5px;
+							border-left: 1px solid rgb(217, 217, 217);
+						}
+					}
+					span#subscription {
+						display:block;
+						position:relative;
+						top:10px;
+					}
+					span#language {
+						display:block;
+						position:relative;
+						top: 10px;
+						left: 230px;
+					}
+					span#search {
+						display:block;
+						position:relative;
+						left: 300px;
+						input[type=text] {
+							margin: 0;
+							border: 0;
+							width: 150px;
+							height: 20px;
+							padding: 3px;
+							outline: none;
+							border-left: 1px solid rgb(204, 204, 204);
+							border-right: 1px solid rgb(204, 204, 204);
+							font: 14px $font-georgia;
+							background: rgb(248, 248, 248)
+						}
+						img {
+							position: relative;
+							top: 5px;
+						}
+						
+						li:nth-child(2) {
+							padding: 8px 0 0 5px;
+							border: none;
+						}
+					}
+				}
+				img#logo {
+					width:240px;
+				}
+				time {
+					font-size: 14px;
+				}
+				nav#main-nav {
+					span {display: none;}
+					position: static;
+					top: 0;
+					height: 30px;
+					margin: 12px 0 0 0;
+					ul {
+						@include clearfix;
+						display: block;
+						list-style: none;
+						padding: 0 0 0 70px;
+						border-top: 3px solid #faa61a;
+						height: 30px;
+						line-height:30px;
+						background: rgb(248, 248, 248);
+						li {
+							width: auto;
+							display: inline;
+							float:left;
+							border: none;
+							margin: 7px 0;
+							padding: 0;
+							a {
+								display:block;
+								font: 14px $font-georgia;
+								color: #000;
+								text-align: center;
+								text-decoration: none;
+								text-transform: uppercase;
+								height: 16px;
+								line-height:16px;
+								border: none;
+								padding: 0 8px;
+								margin: 0;
+								border-left: 1px solid #000;
+								width: auto;
+								letter-spacing:1px;
+							}
+						
+							a:hover {
+								color: rgb(128, 128, 128);
+								background: none;
+							}
+						}
+						li:nth-child(1) a, li:nth-child(2) a {
+							border: none;
+						}
+					} 
+				}
+				nav#sub-nav {
+					margin: 0 0 30px 0;
+					ul {
+						@include clearfix;
+						display: block;
+						list-style: none;
+						padding: 0 0 0 100px;
+						height: 30px;
+						line-height:30px;
+						background: #fff;
+						margin: 0;
+						border-bottom: 1px solid #ddd;
+						border-top: 1px solid #ddd;
+						li {
+							width: auto;
+							display: inline;
+							float:left;
+							border: none;
+							margin: 7px 0;
+							padding: 0;
+							a {
+								display:block;
+								font: normal;
+								color: #444;
+								text-align: center;
+								text-decoration: none;
+								height: 16px;
+								font: 13px $font-arial;
+								line-height:16px;
+								border: none;
+								padding: 0 8px;
+								margin: 0;
+								border: none;
+								width: auto;
+								letter-spacing: 1px;
+							}
+						
+							a:hover {
+								color: #000;
+								background: none;
+							}
+						}
+					}
+				}
+			}
+		}
+		div#page div#content {
+			text-align: left;
+			padding: 0 25px;
+			@include clearfix;
+			section#latest {
+				width: 640px;
+				float:left;
+				article .category { font-size: 12px; text-transform: uppercase; margin: 0 0 5px 0; display: block; }
+				article.vertical {
+					header {
+						padding: 0;
+						h1 {
+							font: 28px $font-georgia;
+							margin: 0 0 10px 0;
+							a {
+								color: #000;
+								text-decoration:none;
+							}
+							a:hover {
+								text-decoration:underline;
+							}
+						}
+					}
+					img {
+						display: block;
+						margin: 0 0 10px 0;
+					}
+					
+					p {
+						padding : 0;
+						font: 14px $font-georgia;
+						a {
+							color: #000;
+							text-decoration:none;
+						}
+					}
+					ul {
+						margin: 10px 0 0 0;
+						padding : 0;
+						li {
+							list-style-image: url('../images/en/square.gif');
+							padding: 0 0 0 5px;
+							a {
+								font: 14px $font-georgia;
+								color: #000;
+								text-decoration:none;
+							}
+							a:hover {
+								text-decoration:underline;
+							}
+						}
+					}
+				}
+				article.horizontal {
+					@include clearfix;
+					border-bottom: 1px dotted #000;
+					padding: 20px 0;
+					text-align: left;
+					header {
+						float: right;
+						width: 63%;
+						padding: 0;
+						h1 {
+							font: 22px $font-georgia;
+							a {
+								color: #000;
+								text-decoration:none;
+							}
+							a:hover {
+								text-decoration:underline;
+							}
+						}
+					}
+					> a {
+						float:left;
+						width: 37%;
+						text-align: center;
+						img {
+							display: block;
+							height: 150px;
+							width: 220px;
+						}
+					}
+					
+					p, ul {
+						padding: 10px 0 0 0;
+						float: right;
+						width: 63%;
+						font: 14px $font-georgia;
+						a, li {
+							color: #000;
+							text-decoration:none;
+						}
+						li {
+							list-style-image: url('../images/en/square.gif');
+							margin: 0 0 0 15px;
+						}
+					}
+				}
+			}
+			section#categories {
+				display: block;
+				width: 640px;
+				float:left;
+				article.luxembourg h1 { border-color: $category-luxembourg-color; }
+				article.international h1 { border-color: $category-international-color; }
+				article.business h1 { border-color: $category-business-color; }
+				article.sport h1 { border-color: $category-sport-color; }
+				
+				article {
+					margin: 20px 0 0 0;
+					float:left;
+					width: 310px;
+					header {
+						@include clearfix;
+						h1 {
+							font: 15px $font-georgia;
+							border-bottom: 3px solid;
+							border-left: 1px solid ;
+							padding: 5px 3px;
+							text-transform: uppercase;
+							letter-spacing:1px;
+						}
+						h2 {
+							font: 20px $font-georgia;
+							a {
+								color: #000;
+								text-decoration:none;
+							}
+							a:hover {
+								text-decoration:underline;
+							}
+						}
+					}
+					img {
+						width: 100%;
+						margin: 0 0 20px 0;
+					}
+					p {
+						a {
+							font: 14px $font-georgia;
+							text-decoration: none;
+							color: #000;
+						}
+					}
+					ul {
+						margin: 20px 0 0 0;
+						padding : 20px 0 0 15px;
+						border-top: 1px dotted #000;
+						li {
+							list-style-image: url('../images/en/square.gif');
+							padding: 0 0 3px 5px;
+							a {
+								font: 14px $font-georgia;
+								color: #000;
+								text-decoration:none;
+							}
+							a:hover {
+								text-decoration:underline;
+							}
+						}
+					}
+				}
+				article:nth-child(even) {
+					padding: 0 0 0 10px;
+				}
+				article:nth-child(odd) {
+					padding: 0 10px 0 0;
+					clear: left;
+				}
+			}
+			div#side {
+				display: block;
+				width: 290px;
+				float:right;
+				margin: 20px 0 0 10px;
+				background: rgb(240, 240, 240);
+				a {
+					text-decoration:none;
+					h1 {
+						background: #faa61a;
+						padding: 5px;
+						font: 16px $font-georgia;
+						color: #fff;
+						opacity: .8;
+					}
+					img {
+						
+					}
+					p {
+						font: 14px $font-georgia;
+						color: #000;
+						padding: 5px 10px;
+					}
+				}
+			}
+		}
+		div#page footer {
+			header ul {
+				padding: 0 0 0 383px;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 1500px) {
+  // TODO: 3 columns layout
+}
