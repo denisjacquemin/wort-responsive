@@ -6,11 +6,11 @@
 	// 2 columns layout
 	body {
 		div#page > header {
-			background: url('../images/olympia2012.jpg') no-repeat;
+			background: url('/assets/images/olympia2012.jpg') no-repeat;
 		}
 		margin:0;
 		padding:0;
-		background: url('../images/bg.jpg') 50% 0 no-repeat fixed;
+		background: url('/assets/images/bg.jpg') 50% 0 no-repeat fixed;
 		text-align: center;
 		div#page {
 			@include clearfix;
@@ -222,7 +222,7 @@
 						margin: 10px 0 0 0;
 						padding : 0;
 						li {
-							list-style-image: url('../images/en/square.gif');
+							list-style-image: url('/assets/images/en/square.gif');
 							padding: 0 0 0 5px;
 							a {
 								font: 14px $font-georgia;
@@ -276,7 +276,7 @@
 							text-decoration:none;
 						}
 						li {
-							list-style-image: url('../images/en/square.gif');
+							list-style-image: url('/assets/images/en/square.gif');
 							margin: 0 0 0 15px;
 						}
 					}
@@ -332,7 +332,7 @@
 						padding : 20px 0 0 15px;
 						border-top: 1px dotted #000;
 						li {
-							list-style-image: url('../images/en/square.gif');
+							list-style-image: url('/assets/images/en/square.gif');
 							padding: 0 0 3px 5px;
 							a {
 								font: 14px $font-georgia;
