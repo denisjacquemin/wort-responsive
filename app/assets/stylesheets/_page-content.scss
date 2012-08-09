@@ -11,7 +11,8 @@ body div#page div#content {
 			header {
 				padding: 0 10px 0 10px;
 				h1 {
-					font: 24px $font-georgia;
+					font-size: 24px;
+					font-weight: normal;
 					margin: 0 0 10px 0;
 					a {
 						color: rgb(68, 68, 68);
@@ -29,7 +30,7 @@ body div#page div#content {
 			}
 			p, ul {
 				padding: 10px 10px;
-				font: 13px $font-georgia;
+				font-size: 13px;
 				a, li {
 					color: rgb(70, 70, 70);
 					text-decoration:none;

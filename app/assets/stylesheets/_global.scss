@@ -4,9 +4,13 @@ body {
 	margin: 0;
 	padding:0;
 	text-align:center;
+	font-family: $font-georgia;
 	div#page {
 		margin:0;
 		padding: 0;
 		width: 100%;
+	}
+	h1, h2 {
+		font-weight: normal;
 	}
 }

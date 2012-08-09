@@ -111,7 +111,7 @@
 							padding: 0;
 							a {
 								display:block;
-								font: 14px $font-georgia;
+								font-size: 14px;
 								color: #000;
 								text-align: center;
 								text-decoration: none;
@@ -194,7 +194,7 @@
 					header {
 						padding: 0;
 						h1 {
-							font: 28px $font-georgia;
+							font-size: 28px;
 							margin: 0 0 10px 0;
 							a {
 								color: #000;
@@ -212,7 +212,7 @@
 					
 					p {
 						padding : 0;
-						font: 14px $font-georgia;
+						font-size: 14px;
 						a {
 							color: #000;
 							text-decoration:none;
@@ -225,7 +225,7 @@
 							list-style-image: url('/assets/images/en/square.gif');
 							padding: 0 0 0 5px;
 							a {
-								font: 14px $font-georgia;
+								font-size: 14px;
 								color: #000;
 								text-decoration:none;
 							}
@@ -245,7 +245,7 @@
 						width: 63%;
 						padding: 0;
 						h1 {
-							font: 22px $font-georgia;
+							font-size: 22px;
 							a {
 								color: #000;
 								text-decoration:none;
@@ -270,7 +270,7 @@
 						padding: 10px 0 0 0;
 						float: right;
 						width: 63%;
-						font: 14px $font-georgia;
+						font-size: 14px;
 						a, li {
 							color: #000;
 							text-decoration:none;
@@ -298,7 +298,7 @@
 					header {
 						@include clearfix;
 						h1 {
-							font: 15px $font-georgia;
+							font-size: 15px;
 							border-bottom: 3px solid;
 							border-left: 1px solid ;
 							padding: 5px 3px;
@@ -306,7 +306,7 @@
 							letter-spacing:1px;
 						}
 						h2 {
-							font: 20px $font-georgia;
+							font-size: 20px;
 							a {
 								color: #000;
 								text-decoration:none;
@@ -322,7 +322,7 @@
 					}
 					p {
 						a {
-							font: 14px $font-georgia;
+							font-size: 14px;
 							text-decoration: none;
 							color: #000;
 						}
@@ -335,7 +335,7 @@
 							list-style-image: url('/assets/images/en/square.gif');
 							padding: 0 0 3px 5px;
 							a {
-								font: 14px $font-georgia;
+								font-size: 14px;
 								color: #000;
 								text-decoration:none;
 							}
@@ -364,7 +364,7 @@
 					h1 {
 						background: #faa61a;
 						padding: 5px;
-						font: 16px $font-georgia;
+						font-size: 16px;
 						color: #fff;
 						opacity: .8;
 					}
@@ -372,7 +372,7 @@
 						
 					}
 					p {
-						font: 14px $font-georgia;
+						font-size: 14px;
 						color: #000;
 						padding: 5px 10px;
 					}
