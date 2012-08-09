@@ -16,8 +16,8 @@
 			@include clearfix;
 			margin: 35px auto 50px auto;
 			width: 990px;
-			background: #fff;
-			box-shadow: rgb(136, 136, 136) 0px 4px 10px 0px;
+			background: white;
+			box-shadow: $dark-grey 0px 4px 10px 0px;
 			> header {
 				text-align:center;
 				background-position: 25px 42px;
@@ -26,13 +26,13 @@
 					width: 940px;
 					padding: 0 0 8px 0;
 					margin: 0 25px;
-					border-bottom: 1px dotted rgb(217, 217, 217);
+					border-bottom: 1px dotted $soft-grey;
 					span ul {
 						list-style: none;
 						display:inline;
 						li {
 							float: left;
-							@include header-top-text;
+							color: $dark-grey;
 							font-size: 14px;
 						}
 						li:nth-child(1) {
@@ -40,7 +40,7 @@
 						}
 						li:nth-child(2) {
 							padding: 0 0 0 5px;
-							border-left: 1px solid rgb(217, 217, 217);
+							border-left: 1px solid $soft-grey;
 						}
 					}
 					span#subscription {
@@ -65,10 +65,10 @@
 							height: 20px;
 							padding: 3px;
 							outline: none;
-							border-left: 1px solid rgb(204, 204, 204);
-							border-right: 1px solid rgb(204, 204, 204);
+							border-left: 1px solid $soft-grey;
+							border-right: 1px solid $soft-grey;
 							font: 14px $font-georgia;
-							background: rgb(248, 248, 248)
+							background: $light-grey;
 						}
 						img {
 							position: relative;
@@ -98,10 +98,10 @@
 						display: block;
 						list-style: none;
 						padding: 0 0 0 70px;
-						border-top: 3px solid #faa61a;
+						border-top: 3px solid $dark-yellow;
 						height: 30px;
 						line-height:30px;
-						background: rgb(248, 248, 248);
+						background: $light-grey;
 						li {
 							width: auto;
 							display: inline;
@@ -112,7 +112,7 @@
 							a {
 								display:block;
 								font-size: 14px;
-								color: #000;
+								color: black;
 								text-align: center;
 								text-decoration: none;
 								text-transform: uppercase;
@@ -121,13 +121,13 @@
 								border: none;
 								padding: 0 8px;
 								margin: 0;
-								border-left: 1px solid #000;
+								border-left: 1px solid black;
 								width: auto;
 								letter-spacing:1px;
 							}
 						
 							a:hover {
-								color: rgb(128, 128, 128);
+								color: $dark-grey;
 								background: none;
 							}
 						}
@@ -145,10 +145,10 @@
 						padding: 0 0 0 100px;
 						height: 30px;
 						line-height:30px;
-						background: #fff;
+						background: white;
 						margin: 0;
-						border-bottom: 1px solid #ddd;
-						border-top: 1px solid #ddd;
+						border-bottom: 1px solid $soft-grey;
+						border-top: 1px solid $soft-grey;
 						li {
 							width: auto;
 							display: inline;
@@ -159,7 +159,7 @@
 							a {
 								display:block;
 								font: normal;
-								color: #444;
+								color: $soft-black;
 								text-align: center;
 								text-decoration: none;
 								height: 16px;
@@ -174,7 +174,7 @@
 							}
 						
 							a:hover {
-								color: #000;
+								color: black;
 								background: none;
 							}
 						}
@@ -197,7 +197,7 @@
 							font-size: 28px;
 							margin: 0 0 10px 0;
 							a {
-								color: #000;
+								color: black;
 								text-decoration:none;
 							}
 							a:hover {
@@ -214,7 +214,7 @@
 						padding : 0;
 						font-size: 14px;
 						a {
-							color: #000;
+							color: black;
 							text-decoration:none;
 						}
 					}
@@ -226,7 +226,7 @@
 							padding: 0 0 0 5px;
 							a {
 								font-size: 14px;
-								color: #000;
+								color: black;
 								text-decoration:none;
 							}
 							a:hover {
@@ -237,7 +237,7 @@
 				}
 				article.horizontal {
 					@include clearfix;
-					border-bottom: 1px dotted #000;
+					border-bottom: 1px dotted black;
 					padding: 20px 0;
 					text-align: left;
 					header {
@@ -247,7 +247,7 @@
 						h1 {
 							font-size: 22px;
 							a {
-								color: #000;
+								color: black;
 								text-decoration:none;
 							}
 							a:hover {
@@ -272,7 +272,7 @@
 						width: 63%;
 						font-size: 14px;
 						a, li {
-							color: #000;
+							color: black;
 							text-decoration:none;
 						}
 						li {
@@ -308,7 +308,7 @@
 						h2 {
 							font-size: 20px;
 							a {
-								color: #000;
+								color: black;
 								text-decoration:none;
 							}
 							a:hover {
@@ -324,19 +324,19 @@
 						a {
 							font-size: 14px;
 							text-decoration: none;
-							color: #000;
+							color: black;
 						}
 					}
 					ul {
 						margin: 20px 0 0 0;
 						padding : 20px 0 0 15px;
-						border-top: 1px dotted #000;
+						border-top: 1px dotted black;
 						li {
 							list-style-image: url('/assets/images/en/square.gif');
 							padding: 0 0 3px 5px;
 							a {
 								font-size: 14px;
-								color: #000;
+								color: black;
 								text-decoration:none;
 							}
 							a:hover {
@@ -358,14 +358,14 @@
 				width: 290px;
 				float:right;
 				margin: 20px 0 0 10px;
-				background: rgb(240, 240, 240);
+				background: $light-grey;
 				a {
 					text-decoration:none;
 					h1 {
-						background: #faa61a;
+						background: $dark-yellow;
 						padding: 5px;
 						font-size: 16px;
-						color: #fff;
+						color: white;
 						opacity: .8;
 					}
 					img {
@@ -373,7 +373,7 @@
 					}
 					p {
 						font-size: 14px;
-						color: #000;
+						color: black;
 						padding: 5px 10px;
 					}
 				}

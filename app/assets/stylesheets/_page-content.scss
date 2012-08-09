@@ -5,7 +5,7 @@ body div#page div#content {
 		article.lifestyle .category 		{ color: $category-lifestyle-color; }
 		article.internatinal .category 	{ color: $category-international-color; }
 		article {
-			border-bottom: 1px dotted #000;
+			border-bottom: 1px dotted black;
 			padding: 20px 0;
 			text-align: left;
 			header {
@@ -15,7 +15,7 @@ body div#page div#content {
 					font-weight: normal;
 					margin: 0 0 10px 0;
 					a {
-						color: rgb(68, 68, 68);
+						color: $soft-black;
 						text-decoration:none;
 					}
 				}
@@ -32,7 +32,7 @@ body div#page div#content {
 				padding: 10px 10px;
 				font-size: 13px;
 				a, li {
-					color: rgb(70, 70, 70);
+					color: $soft-black;
 					text-decoration:none;
 				}
 				li {
