@@ -1,8 +1,8 @@
-@media screen and (min-width: 550px) {
+.breakpoint-tablet {
 	// TODO: 2 columns layout
 }
 
-@media screen and (min-width: 990px) {
+.breakpoint-desktop-screen {
 	// 2 columns layout
 	body {
 		div#page > header {
@@ -390,6 +390,6 @@
 	}
 }
 
-@media screen and (min-width: 1500px) {
+.breakpoint-widescreen {
   // TODO: 3 columns layout
 }
