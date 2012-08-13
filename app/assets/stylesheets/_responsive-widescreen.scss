@@ -3,13 +3,21 @@
 		width: 1400px;
 		div#content {
 			section#latest {
-				display:none;
+				
 			}
 			section#categories {
-				display:none;
+				float: left;
+				width: 360px;
+				margin: 0 0 0 30px; // 1070
+				article {
+					width: auto;
+					padding: 0;
+				}
 			}
 			div#side {
-				display:none;
+				float: left;
+				width: 300;
+				margin: 20px 0 0 30px;
 			}
 		}
 	}
