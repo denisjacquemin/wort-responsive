@@ -1,0 +1,16 @@
+.breakpoint-widescreen body {
+	div#page {
+		width: 1400px;
+		div#content {
+			section#latest {
+				display:none;
+			}
+			section#categories {
+				display:none;
+			}
+			div#side {
+				display:none;
+			}
+		}
+	}
+}
