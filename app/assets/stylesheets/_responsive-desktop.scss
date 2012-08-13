@@ -9,7 +9,7 @@
 		background: url('/assets/images/bg.jpg') 50% 0 no-repeat fixed;
 		text-align: center;
 		div#page {
-			@include clearfix;
+			//@include clearfix;
 			margin: 35px auto 50px auto;
 			width: 990px;
 			background: white;
@@ -19,15 +19,18 @@
 				background-position: 25px 42px;
 				div#top {
 					@include clearfix;
-					width: 940px;
+					position:relative;
+					width: auto;
 					padding: 0 0 8px 0;
 					margin: 0 25px;
 					border-bottom: 1px dotted $soft-grey;
+					text-align:center;
+					height: 25px;
 					span ul {
 						list-style: none;
 						display:inline;
 						li {
-							float: left;
+							display:inline;
 							color: $dark-grey;
 							font-size: 14px;
 						}
@@ -40,20 +43,23 @@
 						}
 					}
 					span#subscription {
+						position: absolute;
+						top: 5px;
 						display:block;
-						position:relative;
-						top:10px;
 					}
 					span#language {
-						display:block;
-						position:relative;
-						top: 10px;
-						left: 230px;
+						margin: 0 auto;
+						display: inline;
+						ul {
+							padding-top:5px;
+							display:block;
+						}
 					}
+					
 					span#search {
-						display:block;
-						position:relative;
-						left: 300px;
+						position: absolute;
+						right:0;
+						display:inline;
 						input[type=text] {
 							margin: 0;
 							border: 0;
@@ -84,44 +90,30 @@
 					font-size: 14px;
 				}
 				nav#main-nav {
-					span {display: none;}
-					position: static;
-					top: 0;
-					height: 30px;
-					margin: 12px 0 0 0;
+					span {display: none;} // hide link Sections
+					margin: 17px 0 0 0;
+					border-top: 3px solid $dark-yellow;
+					background: $light-grey;
 					ul {
-						@include clearfix;
-						display: block;
-						list-style: none;
-						padding: 0 0 0 70px;
-						border-top: 3px solid $dark-yellow;
+						display:block;
 						height: 30px;
-						line-height:30px;
-						background: $light-grey;
 						li {
 							width: auto;
 							display: inline;
-							float:left;
-							border: none;
-							margin: 7px 0;
-							padding: 0;
 							a {
-								display:block;
+								display:inline;
 								font-size: 14px;
+								width: auto;
 								color: black;
-								text-align: center;
 								text-decoration: none;
 								text-transform: uppercase;
-								height: 16px;
-								line-height:16px;
+								height: 30px;
+								line-height:30px;
 								border: none;
-								padding: 0 8px;
-								margin: 0;
+								padding: 0 5px 0 9px;
 								border-left: 1px solid black;
-								width: auto;
 								letter-spacing:1px;
 							}
-						
 							a:hover {
 								color: $dark-grey;
 								background: none;
@@ -130,39 +122,30 @@
 						li:nth-child(1) a, li:nth-child(2) a {
 							border: none;
 						}
-					} 
+					}
 				}
 				nav#sub-nav {
 					margin: 0 0 30px 0;
+					border-bottom: 1px solid $soft-grey;
+					border-top: 1px solid $soft-grey;
 					ul {
-						@include clearfix;
 						display: block;
-						list-style: none;
-						padding: 0 0 0 100px;
 						height: 30px;
 						line-height:30px;
-						background: white;
-						margin: 0;
-						border-bottom: 1px solid $soft-grey;
-						border-top: 1px solid $soft-grey;
 						li {
 							width: auto;
 							display: inline;
-							float:left;
-							border: none;
-							margin: 7px 0;
-							padding: 0;
+							height: 30px;
 							a {
-								display:block;
-								font: normal;
+								display:inline;
 								color: $soft-black;
 								text-align: center;
 								text-decoration: none;
-								height: 16px;
+								height: 30px;
+								line-height:30px;
 								font: 13px $font-arial;
-								line-height:16px;
 								border: none;
-								padding: 0 8px;
+								padding: 0 6px;
 								margin: 0;
 								border: none;
 								width: auto;
