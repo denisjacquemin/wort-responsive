@@ -335,32 +335,38 @@
 			div#side {
 				display: block;
 				width: 290px;
-				float:right;
 				margin: 20px 0 0 10px;
-				background: $light-grey;
-				a {
-					text-decoration:none;
-					h1 {
-						background: $dark-yellow;
-						padding: 5px;
-						font-size: 16px;
-						color: white;
-						opacity: .8;
-					}
-					img {
-						
-					}
-					p {
-						font-size: 14px;
-						color: black;
-						padding: 5px 10px;
+				float:right;
+				.block {
+					margin: 0 0 20px 0;
+					background: $light-grey;
+					a {
+						text-decoration:none;
+						h1 {
+							background: $dark-yellow;
+							padding: 5px;
+							font-size: 16px;
+							color: white;
+							opacity: .8;
+						}
+						img {
+							
+						}
+						p {
+							font-size: 14px;
+							color: black;
+							padding: 5px 10px;
+						}
 					}
 				}
 			}
 		}
 		div#page footer {
+			position: relative;
 			header ul {
-				padding: 0 0 0 383px;
+				margin: 0 auto;
+				width: auto;
+				li {display: inline;}
 			}
 			img#footerlogo {
 				width: 400px;
