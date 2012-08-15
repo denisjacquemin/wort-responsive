@@ -1,0 +1,535 @@
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+.clearfix {
+  display: inline-block; }
+
+/* Fonts */
+/* Colors */
+/* Categories Colors */
+/* red  	*/
+/* orange 	*/
+/* blue 	*/
+/* purple 	*/
+/* blue 	*/
+/* green 	*/
+/* yellow 	*/
+/* pink 	*/
+ul {
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  margin: 0;
+  padding: 0; }
+
+p {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: white;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: georgia, arial, serif; }
+  body div#page {
+    margin: 0;
+    padding: 0;
+    width: 100%; }
+  body h1, body h2 {
+    font-weight: normal; }
+
+body div#page > header {
+  background: url("../images/olympia2012s.jpg") 5px 17px no-repeat; }
+  body div#page > header div#top span#subscription {
+    display: none; }
+  body div#page > header div#top span#language {
+    display: none; }
+  body div#page > header div#top span#search {
+    display: none; }
+  body div#page > header img#logo {
+    width: 125px;
+    margin: 5px 0 0 0; }
+  body div#page > header time {
+    color: gray;
+    font-size: 11px;
+    display: block; }
+  body div#page > header nav#main-nav span {
+    margin: 10px 0 0 0;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9; }
+    body div#page > header nav#main-nav span a {
+      border-bottom: 1px;
+      width: 100%;
+      padding: 10px 20px 10px 10px;
+      text-decoration: none;
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 11px;
+      text-transform: uppercase;
+      color: black000;
+      font-weight: bold; }
+  body div#page > header nav#main-nav ul {
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    body div#page > header nav#main-nav ul li {
+      width: 100%;
+      text-align: left; }
+      body div#page > header nav#main-nav ul li a {
+        color: gray;
+        font-size: 14px;
+        line-height: 30px;
+        height: 30px;
+        width: 100%;
+        display: block;
+        text-decoration: none;
+        border-bottom: 1px solid gray;
+        padding: 0 0 0 10px; }
+      body div#page > header nav#main-nav ul li a:hover {
+        background: #d9d9d9; }
+  body div#page > header nav#sub-nav ul {
+    display: none; }
+
+body div#page div#content section#latest article.sport .category {
+  color: #af2025; }
+body div#page div#content section#latest article.luxembourg .category {
+  color: #2a62b6; }
+body div#page div#content section#latest article.lifestyle .category {
+  color: #a54d9c; }
+body div#page div#content section#latest article.internatinal .category {
+  color: #37843f; }
+body div#page div#content section#latest article {
+  border-bottom: 1px dotted black;
+  padding: 20px 0;
+  text-align: left; }
+  body div#page div#content section#latest article header {
+    padding: 0 10px 0 10px; }
+    body div#page div#content section#latest article header h1 {
+      font-size: 24px;
+      font-weight: normal;
+      margin: 0 0 10px 0; }
+      body div#page div#content section#latest article header h1 a {
+        color: #444444;
+        text-decoration: none; }
+    body div#page div#content section#latest article header .category {
+      font: 10px Helvetica, Arial, sans-serif;
+      text-transform: uppercase;
+      padding: 0 0 0 2px; }
+  body div#page div#content section#latest article img {
+    display: none; }
+  body div#page div#content section#latest article p, body div#page div#content section#latest article ul {
+    padding: 10px 10px;
+    font-size: 13px; }
+    body div#page div#content section#latest article p a, body div#page div#content section#latest article p li, body div#page div#content section#latest article ul a, body div#page div#content section#latest article ul li {
+      color: #444444;
+      text-decoration: none; }
+    body div#page div#content section#latest article p li, body div#page div#content section#latest article ul li {
+      list-style-image: url("../images/en/square.gif");
+      margin: 0 0 0 15px; }
+body div#page div#content section#latest article:nth-child(1) img {
+  display: block;
+  width: 100%; }
+body div#page div#content section#latest article:nth-last-child(1) {
+  border: none; }
+body div#page div#content div#side, body div#page div#content section#categories {
+  display: none; }
+
+div#page footer {
+  margin: 50px 0 0 0;
+  width: 100%;
+  text-align: center; }
+  div#page footer header ul {
+    background: #faa61a;
+    display: block;
+    list-style: none;
+    padding: 0 0 0 10px;
+    height: 30px;
+    line-height: 30px; }
+    div#page footer header ul:before, div#page footer header ul:after {
+      content: " ";
+      display: table; }
+    div#page footer header ul:after {
+      clear: both; }
+    div#page footer header ul {
+      *zoom: 1; }
+    div#page footer header ul li {
+      display: inline;
+      margin: 10px 0;
+      padding: 0 0 0 10px; }
+      div#page footer header ul li a {
+        font: 12px arial, serif;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+        padding: 15px 0; }
+    div#page footer header ul li:nth-child(1) {
+      border-right: 1px solid white;
+      padding: 0 10px 0 0; }
+  div#page footer nav {
+    width: auto;
+    padding: 0 0 20px 0;
+    border-bottom: 1px dotted black; }
+    div#page footer nav h1 {
+      font: 14px arial, serif;
+      color: #444444;
+      margin: 10px 0;
+      clear: both; }
+    div#page footer nav ul {
+      display: block;
+      width: 70%;
+      margin: 10px auto 0 auto; }
+      div#page footer nav ul li {
+        display: inline;
+        margin: 0 10px 0 0; }
+        div#page footer nav ul li a {
+          font: 12px arial, serif;
+          color: gray;
+          text-decoration: none; }
+        div#page footer nav ul li a:hover {
+          text-decoration: underline; }
+  div#page footer img#footerlogo {
+    margin: 20px 0;
+    width: 250px; }
+
+.breakpoint-desktop-screen body {
+  margin: 0;
+  padding: 0;
+  background: url("/assets/images/bg.jpg") 50% 0 no-repeat fixed;
+  text-align: center; }
+  .breakpoint-desktop-screen body div#page > header {
+    background: url("/assets/images/olympia2012.jpg") no-repeat; }
+  .breakpoint-desktop-screen body div#page {
+    margin: 35px auto 50px auto;
+    width: 990px;
+    background: white;
+    box-shadow: gray 0px 4px 10px 0px; }
+    .breakpoint-desktop-screen body div#page > header {
+      text-align: center;
+      background-position: 25px 42px; }
+      .breakpoint-desktop-screen body div#page > header div#top {
+        position: relative;
+        width: auto;
+        padding: 0 0 8px 0;
+        margin: 0 25px;
+        border-bottom: 1px dotted #d9d9d9;
+        text-align: center;
+        height: 25px; }
+        .breakpoint-desktop-screen body div#page > header div#top:before, .breakpoint-desktop-screen body div#page > header div#top:after {
+          content: " ";
+          display: table; }
+        .breakpoint-desktop-screen body div#page > header div#top:after {
+          clear: both; }
+        .breakpoint-desktop-screen body div#page > header div#top {
+          *zoom: 1; }
+        .breakpoint-desktop-screen body div#page > header div#top span ul {
+          list-style: none;
+          display: inline; }
+          .breakpoint-desktop-screen body div#page > header div#top span ul li {
+            display: inline;
+            color: gray;
+            font-size: 14px; }
+          .breakpoint-desktop-screen body div#page > header div#top span ul li:nth-child(1) {
+            padding: 0 5px 0 0; }
+          .breakpoint-desktop-screen body div#page > header div#top span ul li:nth-child(2) {
+            padding: 0 0 0 5px;
+            border-left: 1px solid #d9d9d9; }
+        .breakpoint-desktop-screen body div#page > header div#top span#subscription {
+          position: absolute;
+          top: 5px;
+          display: block; }
+        .breakpoint-desktop-screen body div#page > header div#top span#language {
+          margin: 0 auto;
+          display: inline; }
+          .breakpoint-desktop-screen body div#page > header div#top span#language ul {
+            padding-top: 5px;
+            display: block; }
+        .breakpoint-desktop-screen body div#page > header div#top span#search {
+          position: absolute;
+          right: 0;
+          display: inline; }
+          .breakpoint-desktop-screen body div#page > header div#top span#search input[type=text] {
+            margin: 0;
+            border: 0;
+            width: 150px;
+            height: 20px;
+            padding: 3px;
+            outline: none;
+            border-left: 1px solid #d9d9d9;
+            border-right: 1px solid #d9d9d9;
+            font: 14px georgia, arial, serif;
+            background: #f8f8f8; }
+          .breakpoint-desktop-screen body div#page > header div#top span#search img {
+            position: relative;
+            top: 5px; }
+          .breakpoint-desktop-screen body div#page > header div#top span#search li:nth-child(2) {
+            padding: 8px 0 0 5px;
+            border: none; }
+      .breakpoint-desktop-screen body div#page > header img#logo {
+        width: 240px; }
+      .breakpoint-desktop-screen body div#page > header time {
+        font-size: 14px; }
+      .breakpoint-desktop-screen body div#page > header nav#main-nav {
+        margin: 17px 0 0 0;
+        border-top: 3px solid #faa61a;
+        background: #f8f8f8; }
+        .breakpoint-desktop-screen body div#page > header nav#main-nav span {
+          display: none; }
+        .breakpoint-desktop-screen body div#page > header nav#main-nav ul {
+          display: block;
+          height: 30px; }
+          .breakpoint-desktop-screen body div#page > header nav#main-nav ul li {
+            width: auto;
+            display: inline; }
+            .breakpoint-desktop-screen body div#page > header nav#main-nav ul li a {
+              display: inline;
+              font-size: 14px;
+              width: auto;
+              color: black;
+              text-decoration: none;
+              text-transform: uppercase;
+              height: 30px;
+              line-height: 30px;
+              border: none;
+              padding: 0 5px 0 9px;
+              border-left: 1px solid black;
+              letter-spacing: 1px; }
+            .breakpoint-desktop-screen body div#page > header nav#main-nav ul li a:hover {
+              color: gray;
+              background: none; }
+          .breakpoint-desktop-screen body div#page > header nav#main-nav ul li:nth-child(1) a, .breakpoint-desktop-screen body div#page > header nav#main-nav ul li:nth-child(2) a {
+            border: none; }
+      .breakpoint-desktop-screen body div#page > header nav#sub-nav {
+        margin: 0 0 30px 0;
+        border-bottom: 1px solid #d9d9d9;
+        border-top: 1px solid #d9d9d9; }
+        .breakpoint-desktop-screen body div#page > header nav#sub-nav ul {
+          display: block;
+          height: 30px;
+          line-height: 30px; }
+          .breakpoint-desktop-screen body div#page > header nav#sub-nav ul li {
+            width: auto;
+            display: inline;
+            height: 30px; }
+            .breakpoint-desktop-screen body div#page > header nav#sub-nav ul li a {
+              display: inline;
+              color: #444444;
+              text-align: center;
+              text-decoration: none;
+              height: 30px;
+              line-height: 30px;
+              font: 13px arial, serif;
+              border: none;
+              padding: 0 6px;
+              margin: 0;
+              border: none;
+              width: auto;
+              letter-spacing: 1px; }
+            .breakpoint-desktop-screen body div#page > header nav#sub-nav ul li a:hover {
+              color: black;
+              background: none; }
+  .breakpoint-desktop-screen body div#page div#content {
+    text-align: left;
+    padding: 0 25px; }
+    .breakpoint-desktop-screen body div#page div#content:before, .breakpoint-desktop-screen body div#page div#content:after {
+      content: " ";
+      display: table; }
+    .breakpoint-desktop-screen body div#page div#content:after {
+      clear: both; }
+    .breakpoint-desktop-screen body div#page div#content {
+      *zoom: 1; }
+    .breakpoint-desktop-screen body div#page div#content section#latest {
+      width: 640px;
+      float: left; }
+      .breakpoint-desktop-screen body div#page div#content section#latest article .category {
+        font-size: 12px;
+        text-transform: uppercase;
+        margin: 0 0 5px 0;
+        display: block; }
+      .breakpoint-desktop-screen body div#page div#content section#latest article.vertical header {
+        padding: 0; }
+        .breakpoint-desktop-screen body div#page div#content section#latest article.vertical header h1 {
+          font-size: 28px;
+          margin: 0 0 10px 0; }
+          .breakpoint-desktop-screen body div#page div#content section#latest article.vertical header h1 a {
+            color: black;
+            text-decoration: none; }
+          .breakpoint-desktop-screen body div#page div#content section#latest article.vertical header h1 a:hover {
+            text-decoration: underline; }
+      .breakpoint-desktop-screen body div#page div#content section#latest article.vertical img {
+        display: block;
+        margin: 0 0 10px 0; }
+      .breakpoint-desktop-screen body div#page div#content section#latest article.vertical p {
+        padding: 0;
+        font-size: 14px; }
+        .breakpoint-desktop-screen body div#page div#content section#latest article.vertical p a {
+          color: black;
+          text-decoration: none; }
+      .breakpoint-desktop-screen body div#page div#content section#latest article.vertical ul {
+        margin: 10px 0 0 0;
+        padding: 0; }
+        .breakpoint-desktop-screen body div#page div#content section#latest article.vertical ul li {
+          list-style-image: url("/assets/images/en/square.gif");
+          padding: 0 0 0 5px; }
+          .breakpoint-desktop-screen body div#page div#content section#latest article.vertical ul li a {
+            font-size: 14px;
+            color: black;
+            text-decoration: none; }
+          .breakpoint-desktop-screen body div#page div#content section#latest article.vertical ul li a:hover {
+            text-decoration: underline; }
+      .breakpoint-desktop-screen body div#page div#content section#latest article.horizontal {
+        border-bottom: 1px dotted black;
+        padding: 20px 0;
+        text-align: left; }
+        .breakpoint-desktop-screen body div#page div#content section#latest article.horizontal:before, .breakpoint-desktop-screen body div#page div#content section#latest article.horizontal:after {
+          content: " ";
+          display: table; }
+        .breakpoint-desktop-screen body div#page div#content section#latest article.horizontal:after {
+          clear: both; }
+        .breakpoint-desktop-screen body div#page div#content section#latest article.horizontal {
+          *zoom: 1; }
+        .breakpoint-desktop-screen body div#page div#content section#latest article.horizontal header {
+          float: right;
+          width: 63%;
+          padding: 0; }
+          .breakpoint-desktop-screen body div#page div#content section#latest article.horizontal header h1 {
+            font-size: 22px; }
+            .breakpoint-desktop-screen body div#page div#content section#latest article.horizontal header h1 a {
+              color: black;
+              text-decoration: none; }
+            .breakpoint-desktop-screen body div#page div#content section#latest article.horizontal header h1 a:hover {
+              text-decoration: underline; }
+        .breakpoint-desktop-screen body div#page div#content section#latest article.horizontal > a {
+          float: left;
+          width: 37%;
+          text-align: center; }
+          .breakpoint-desktop-screen body div#page div#content section#latest article.horizontal > a img {
+            display: block;
+            height: 150px;
+            width: 220px; }
+        .breakpoint-desktop-screen body div#page div#content section#latest article.horizontal p, .breakpoint-desktop-screen body div#page div#content section#latest article.horizontal ul {
+          padding: 10px 0 0 0;
+          float: right;
+          width: 63%;
+          font-size: 14px; }
+          .breakpoint-desktop-screen body div#page div#content section#latest article.horizontal p a, .breakpoint-desktop-screen body div#page div#content section#latest article.horizontal p li, .breakpoint-desktop-screen body div#page div#content section#latest article.horizontal ul a, .breakpoint-desktop-screen body div#page div#content section#latest article.horizontal ul li {
+            color: black;
+            text-decoration: none; }
+          .breakpoint-desktop-screen body div#page div#content section#latest article.horizontal p li, .breakpoint-desktop-screen body div#page div#content section#latest article.horizontal ul li {
+            list-style-image: url("/assets/images/en/square.gif");
+            margin: 0 0 0 15px; }
+    .breakpoint-desktop-screen body div#page div#content section#categories {
+      display: block;
+      width: 640px;
+      float: left; }
+      .breakpoint-desktop-screen body div#page div#content section#categories article.luxembourg h1 {
+        border-color: #2a62b6; }
+      .breakpoint-desktop-screen body div#page div#content section#categories article.international h1 {
+        border-color: #37843f; }
+      .breakpoint-desktop-screen body div#page div#content section#categories article.business h1 {
+        border-color: #394da1; }
+      .breakpoint-desktop-screen body div#page div#content section#categories article.sport h1 {
+        border-color: #af2025; }
+      .breakpoint-desktop-screen body div#page div#content section#categories article {
+        margin: 20px 0 0 0;
+        float: left;
+        width: 310px; }
+        .breakpoint-desktop-screen body div#page div#content section#categories article header:before, .breakpoint-desktop-screen body div#page div#content section#categories article header:after {
+          content: " ";
+          display: table; }
+        .breakpoint-desktop-screen body div#page div#content section#categories article header:after {
+          clear: both; }
+        .breakpoint-desktop-screen body div#page div#content section#categories article header {
+          *zoom: 1; }
+        .breakpoint-desktop-screen body div#page div#content section#categories article header h1 {
+          font-size: 15px;
+          border-bottom: 3px solid;
+          border-left: 1px solid;
+          padding: 5px 3px;
+          text-transform: uppercase;
+          letter-spacing: 1px; }
+        .breakpoint-desktop-screen body div#page div#content section#categories article header h2 {
+          font-size: 20px; }
+          .breakpoint-desktop-screen body div#page div#content section#categories article header h2 a {
+            color: black;
+            text-decoration: none; }
+          .breakpoint-desktop-screen body div#page div#content section#categories article header h2 a:hover {
+            text-decoration: underline; }
+        .breakpoint-desktop-screen body div#page div#content section#categories article img {
+          width: 100%;
+          margin: 0 0 20px 0; }
+        .breakpoint-desktop-screen body div#page div#content section#categories article p a {
+          font-size: 14px;
+          text-decoration: none;
+          color: black; }
+        .breakpoint-desktop-screen body div#page div#content section#categories article ul {
+          margin: 20px 0 0 0;
+          padding: 20px 0 0 15px;
+          border-top: 1px dotted black; }
+          .breakpoint-desktop-screen body div#page div#content section#categories article ul li {
+            list-style-image: url("/assets/images/en/square.gif");
+            padding: 0 0 3px 5px; }
+            .breakpoint-desktop-screen body div#page div#content section#categories article ul li a {
+              font-size: 14px;
+              color: black;
+              text-decoration: none; }
+            .breakpoint-desktop-screen body div#page div#content section#categories article ul li a:hover {
+              text-decoration: underline; }
+      .breakpoint-desktop-screen body div#page div#content section#categories article:nth-child(even) {
+        padding: 0 0 0 10px; }
+      .breakpoint-desktop-screen body div#page div#content section#categories article:nth-child(odd) {
+        padding: 0 10px 0 0;
+        clear: left; }
+    .breakpoint-desktop-screen body div#page div#content div#side {
+      display: block;
+      width: 290px;
+      margin: 20px 0 0 10px;
+      float: right; }
+      .breakpoint-desktop-screen body div#page div#content div#side .block {
+        margin: 0 0 20px 0;
+        background: #f8f8f8; }
+        .breakpoint-desktop-screen body div#page div#content div#side .block a {
+          text-decoration: none; }
+          .breakpoint-desktop-screen body div#page div#content div#side .block a h1 {
+            background: #faa61a;
+            padding: 5px;
+            font-size: 16px;
+            color: white;
+            opacity: .8; }
+          .breakpoint-desktop-screen body div#page div#content div#side .block a p {
+            font-size: 14px;
+            color: black;
+            padding: 5px 10px; }
+  .breakpoint-desktop-screen body div#page footer {
+    position: relative; }
+    .breakpoint-desktop-screen body div#page footer header ul {
+      margin: 0 auto;
+      width: auto; }
+      .breakpoint-desktop-screen body div#page footer header ul li {
+        display: inline; }
+    .breakpoint-desktop-screen body div#page footer img#footerlogo {
+      width: 400px; }
+
+.breakpoint-widescreen body div#page {
+  width: 1400px; }
+  .breakpoint-widescreen body div#page div#content section#categories {
+    float: left;
+    width: 360px;
+    margin: 0 0 0 30px; }
+    .breakpoint-widescreen body div#page div#content section#categories article {
+      width: auto;
+      padding: 0; }
+  .breakpoint-widescreen body div#page div#content div#side {
+    float: left;
+    width: 300;
+    margin: 20px 0 0 30px; }
