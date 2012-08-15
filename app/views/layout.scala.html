@@ -10,6 +10,12 @@
 		<meta name="breakpoint" data="retina" media="only screen and (-webkit-min-device-pixel-ratio : 2)">
 		<link rel="stylesheet" href="@routes.Assets.at("stylesheets/styles.css")">
 		<script src="@routes.Assets.at("javascripts/vendor/modernizr.custom.74096.js")"></script>
+		<script>
+			Modernizr.load([{
+			  test: ( !!window.matchMedia ),
+			  nope: ['@routes.Assets.at("javascripts/vendor/matchMedia.js")']
+			}]);
+		</script>
 		<title>Wort.lu</title>
   	</head>
 	<body>
