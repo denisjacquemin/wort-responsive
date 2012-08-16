@@ -189,15 +189,8 @@
 						margin: 0 0 10px 0;
 					}
 					
-					p {
-						padding : 0;
-						font-size: 14px;
-						a {
-							color: black;
-							text-decoration:none;
-						}
-					}
-					ul { @include bullet }
+					p { @include article-body; }
+					ul { @include bullet; }
 				}
 				article.horizontal {
 					@include clearfix;
@@ -230,13 +223,16 @@
 						}
 					}
 					
+					p { @include article-body; }
+					
 					p, ul {
 						padding: 10px 0 0 0;
 						float: right;
 						width: 63%;
 						font-size: 14px;
+						a { color: $soft-black; }
 					}
-					ul { @include bullet }
+					ul { @include bullet; }
 				}
 			}
 			section#categories {
@@ -277,13 +273,8 @@
 						width: 100%;
 						margin: 0 0 20px 0;
 					}
-					p {
-						a {
-							font-size: 14px;
-							text-decoration: none;
-							color: black;
-						}
-					}
+					p { @include article-body; }
+						
 					ul { 
 						@include bullet;
 						border-top: 1px dotted black;
@@ -303,23 +294,24 @@
 				.block {
 					margin: 0 0 20px 0;
 					background: $light-grey;
-					a {
+					a { 
 						text-decoration:none;
-						h1 {
-							background: $dark-yellow;
-							padding: 5px;
-							font-size: 16px;
-							color: white;
-							opacity: .8;
-						}
-						img {
-							width: 100%;
-						}
-						p {
-							font-size: 14px;
-							color: black;
-							padding: 5px 10px;
-						}
+						color: white;
+					}
+					h1 {
+						background: $dark-yellow;
+						padding: 5px;
+						font-size: 16px;
+						color: white;
+						opacity: .8;
+						
+					}
+					img {
+						width: 100%;
+					}
+					p  { 
+						@include article-body;
+						padding: 5px;
 					}
 				}
 			}
