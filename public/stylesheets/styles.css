@@ -9,17 +9,6 @@
 .clearfix {
   display: inline-block; }
 
-/* Fonts */
-/* Colors */
-/* Categories Colors */
-/* red  	*/
-/* orange 	*/
-/* blue 	*/
-/* purple 	*/
-/* blue 	*/
-/* green 	*/
-/* yellow 	*/
-/* pink 	*/
 ul {
   margin: 0;
   padding: 0; }
@@ -45,6 +34,8 @@ body {
     width: 100%; }
   body h1, body h2 {
     font-weight: normal; }
+  body img {
+    border: 0; }
 
 body div#page > header {
   background: url("../images/olympia2012s.jpg") 5px 17px no-repeat; }
@@ -371,6 +362,7 @@ div#page footer {
         margin: 0 0 10px 0; }
       .breakpoint-desktop-screen body div#page div#content section#latest article.vertical p {
         padding: 0;
+        margin: 0;
         font-size: 14px; }
         .breakpoint-desktop-screen body div#page div#content section#latest article.vertical p a {
           color: black;
@@ -380,7 +372,8 @@ div#page footer {
         padding: 0; }
         .breakpoint-desktop-screen body div#page div#content section#latest article.vertical ul li {
           list-style-image: url("/assets/images/en/square.gif");
-          padding: 0 0 0 5px; }
+          padding: 0 0 0 5px;
+          margin: 0 0 0 15px; }
           .breakpoint-desktop-screen body div#page div#content section#latest article.vertical ul li a {
             font-size: 14px;
             color: black;
@@ -417,17 +410,33 @@ div#page footer {
             display: block;
             height: 150px;
             width: 220px; }
+        .breakpoint-desktop-screen body div#page div#content section#latest article.horizontal p {
+          padding: 0;
+          margin: 0;
+          font-size: 14px; }
+          .breakpoint-desktop-screen body div#page div#content section#latest article.horizontal p a {
+            color: black;
+            text-decoration: none; }
         .breakpoint-desktop-screen body div#page div#content section#latest article.horizontal p, .breakpoint-desktop-screen body div#page div#content section#latest article.horizontal ul {
           padding: 10px 0 0 0;
           float: right;
           width: 63%;
           font-size: 14px; }
-          .breakpoint-desktop-screen body div#page div#content section#latest article.horizontal p a, .breakpoint-desktop-screen body div#page div#content section#latest article.horizontal p li, .breakpoint-desktop-screen body div#page div#content section#latest article.horizontal ul a, .breakpoint-desktop-screen body div#page div#content section#latest article.horizontal ul li {
-            color: black;
-            text-decoration: none; }
-          .breakpoint-desktop-screen body div#page div#content section#latest article.horizontal p li, .breakpoint-desktop-screen body div#page div#content section#latest article.horizontal ul li {
+          .breakpoint-desktop-screen body div#page div#content section#latest article.horizontal p a, .breakpoint-desktop-screen body div#page div#content section#latest article.horizontal ul a {
+            color: #444444; }
+        .breakpoint-desktop-screen body div#page div#content section#latest article.horizontal ul {
+          margin: 10px 0 0 0;
+          padding: 0; }
+          .breakpoint-desktop-screen body div#page div#content section#latest article.horizontal ul li {
             list-style-image: url("/assets/images/en/square.gif");
+            padding: 0 0 0 5px;
             margin: 0 0 0 15px; }
+            .breakpoint-desktop-screen body div#page div#content section#latest article.horizontal ul li a {
+              font-size: 14px;
+              color: black;
+              text-decoration: none; }
+            .breakpoint-desktop-screen body div#page div#content section#latest article.horizontal ul li a:hover {
+              text-decoration: underline; }
     .breakpoint-desktop-screen body div#page div#content section#categories {
       display: block;
       width: 640px;
@@ -468,27 +477,30 @@ div#page footer {
         .breakpoint-desktop-screen body div#page div#content section#categories article img {
           width: 100%;
           margin: 0 0 20px 0; }
-        .breakpoint-desktop-screen body div#page div#content section#categories article p a {
-          font-size: 14px;
-          text-decoration: none;
-          color: black; }
+        .breakpoint-desktop-screen body div#page div#content section#categories article p {
+          padding: 0;
+          margin: 0;
+          font-size: 14px; }
+          .breakpoint-desktop-screen body div#page div#content section#categories article p a {
+            color: black;
+            text-decoration: none; }
         .breakpoint-desktop-screen body div#page div#content section#categories article ul {
-          margin: 20px 0 0 0;
-          padding: 20px 0 0 15px;
-          border-top: 1px dotted black; }
+          margin: 10px 0 0 0;
+          padding: 0;
+          border-top: 1px dotted black;
+          padding: 20px 0 0 0; }
           .breakpoint-desktop-screen body div#page div#content section#categories article ul li {
             list-style-image: url("/assets/images/en/square.gif");
-            padding: 0 0 3px 5px; }
+            padding: 0 0 0 5px;
+            margin: 0 0 0 15px; }
             .breakpoint-desktop-screen body div#page div#content section#categories article ul li a {
               font-size: 14px;
               color: black;
               text-decoration: none; }
             .breakpoint-desktop-screen body div#page div#content section#categories article ul li a:hover {
               text-decoration: underline; }
-      .breakpoint-desktop-screen body div#page div#content section#categories article:nth-child(even) {
-        padding: 0 0 0 10px; }
       .breakpoint-desktop-screen body div#page div#content section#categories article:nth-child(odd) {
-        padding: 0 10px 0 0;
+        padding: 0 20px 0 0;
         clear: left; }
     .breakpoint-desktop-screen body div#page div#content div#side {
       display: block;
@@ -499,17 +511,24 @@ div#page footer {
         margin: 0 0 20px 0;
         background: #f8f8f8; }
         .breakpoint-desktop-screen body div#page div#content div#side .block a {
-          text-decoration: none; }
-          .breakpoint-desktop-screen body div#page div#content div#side .block a h1 {
-            background: #faa61a;
-            padding: 5px;
-            font-size: 16px;
-            color: white;
-            opacity: .8; }
-          .breakpoint-desktop-screen body div#page div#content div#side .block a p {
-            font-size: 14px;
+          text-decoration: none;
+          color: white; }
+        .breakpoint-desktop-screen body div#page div#content div#side .block h1 {
+          background: #faa61a;
+          padding: 5px;
+          font-size: 16px;
+          color: white;
+          opacity: .8; }
+        .breakpoint-desktop-screen body div#page div#content div#side .block img {
+          width: 100%; }
+        .breakpoint-desktop-screen body div#page div#content div#side .block p {
+          padding: 0;
+          margin: 0;
+          font-size: 14px;
+          padding: 5px; }
+          .breakpoint-desktop-screen body div#page div#content div#side .block p a {
             color: black;
-            padding: 5px 10px; }
+            text-decoration: none; }
   .breakpoint-desktop-screen body div#page footer {
     position: relative; }
     .breakpoint-desktop-screen body div#page footer header ul {
@@ -527,8 +546,10 @@ div#page footer {
     width: 360px;
     margin: 0 0 0 30px; }
     .breakpoint-widescreen body div#page div#content section#categories article {
-      width: auto;
-      padding: 0; }
+      width: 100%; }
+    .breakpoint-widescreen body div#page div#content section#categories article:nth-child(odd) {
+      padding: 0 0 0 0;
+      clear: none; }
   .breakpoint-widescreen body div#page div#content div#side {
     float: left;
     width: 300;
