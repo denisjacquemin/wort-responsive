@@ -13,4 +13,7 @@ body {
 	h1, h2 {
 		font-weight: normal;
 	}
+	img {
+		border: 0; // ie fix
+	}
 }
