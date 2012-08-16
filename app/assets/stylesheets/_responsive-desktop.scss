@@ -197,22 +197,7 @@
 							text-decoration:none;
 						}
 					}
-					ul {
-						margin: 10px 0 0 0;
-						padding : 0;
-						li {
-							list-style-image: url('/assets/images/en/square.gif');
-							padding: 0 0 0 5px;
-							a {
-								font-size: 14px;
-								color: black;
-								text-decoration:none;
-							}
-							a:hover {
-								text-decoration:underline;
-							}
-						}
-					}
+					ul { @include bullet }
 				}
 				article.horizontal {
 					@include clearfix;
@@ -250,15 +235,8 @@
 						float: right;
 						width: 63%;
 						font-size: 14px;
-						a, li {
-							color: black;
-							text-decoration:none;
-						}
-						li {
-							list-style-image: url('/assets/images/en/square.gif');
-							margin: 0 0 0 15px;
-						}
 					}
+					ul { @include bullet }
 				}
 			}
 			section#categories {
@@ -306,23 +284,7 @@
 							color: black;
 						}
 					}
-					ul {
-						margin: 20px 0 0 0;
-						padding : 20px 0 0 15px;
-						border-top: 1px dotted black;
-						li {
-							list-style-image: url('/assets/images/en/square.gif');
-							padding: 0 0 3px 5px;
-							a {
-								font-size: 14px;
-								color: black;
-								text-decoration:none;
-							}
-							a:hover {
-								text-decoration:underline;
-							}
-						}
-					}
+					ul { @include bullet }
 				}
 				article:nth-child(even) {
 					padding: 0 0 0 10px;
