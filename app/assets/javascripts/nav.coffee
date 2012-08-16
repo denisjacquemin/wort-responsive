@@ -13,8 +13,14 @@ metaQuery.bind('phone', (match) ->
     addMenuBehaviourToSection()
 )
 
-# make sure #section-nav element menu behaviour is not set
+# make sure #section-nav element menu behaviour is not set for desktop and wide screen
 metaQuery.bind('desktop-screen', (match) ->
+  if match
+    removeMenuBehaviourToSection()
+    $('nav#main-nav ul').show() # make sure the main-nav is visible
+)
+
+metaQuery.bind('widescreen', (match) ->
   if match
     removeMenuBehaviourToSection()
     $('nav#main-nav ul').show() # make sure the main-nav is visible
