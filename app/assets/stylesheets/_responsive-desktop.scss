@@ -88,6 +88,8 @@
 				}
 				time {
 					font-size: 14px;
+					color: $dark-grey;
+					display: block;
 				}
 				nav#main-nav {
 					span {display: none;} // hide link Sections
@@ -168,6 +170,14 @@
 			section#latest {
 				width: 640px;
 				float:left;
+				
+				article {
+					border-bottom: 1px dotted black;
+					@include clearfix;
+					padding: 20px 0;
+					text-align: left;
+				}
+				
 				article .category { font-size: 12px; text-transform: uppercase; margin: 0 0 5px 0; display: block; }
 				article.vertical {
 					header {
@@ -187,16 +197,13 @@
 					img {
 						display: block;
 						margin: 0 0 10px 0;
+						width: 100%;
 					}
 					
 					p { @include article-body; }
 					ul { @include bullet; }
 				}
 				article.horizontal {
-					@include clearfix;
-					border-bottom: 1px dotted black;
-					padding: 20px 0;
-					text-align: left;
 					header {
 						float: right;
 						width: 63%;
@@ -317,13 +324,64 @@
 			}
 		}
 		div#page footer {
-			position: relative;
+			margin: 50px 0 0 0;
+			width: 100%;
+			text-align: center;
 			header ul {
-				margin: 0 auto;
+				@include clearfix;
+				background: $dark-yellow;
+				display: block;
+				list-style: none;
+				padding: 0 0 0 10px;
+				height: 30px;
+				line-height: 30px;
+				li {
+					display: inline;
+					margin: 10px 0;
+					padding: 0 0 0 10px;
+					a {
+						font: 12px $font-arial;
+						text-decoration: none;
+						text-transform: uppercase;
+						color: white;
+						padding: 15px 0;
+					}
+				}
+				li:nth-child(1) {
+					border-right: 1px solid white;
+					padding: 0 10px 0 0;
+				}
+			}
+			nav {
 				width: auto;
-				li {display: inline;}
+				padding: 0 0 20px 0;
+				border-bottom: 1px dotted black;
+				h1 {
+					font: 14px $font-arial;
+					color: $soft-black;
+					margin: 10px 0;
+					clear: both;
+				}
+				ul {
+					display:block;
+					width: 70%;
+					margin: 10px auto 0 auto;
+					li {
+						display: inline;
+						margin: 0 10px 0 0;
+						a {
+							font: 12px $font-arial;
+							color: $dark-grey;
+							text-decoration: none;
+						}
+						a:hover {
+							text-decoration: underline;
+						}
+					}
+				}
 			}
 			img#footerlogo {
+				margin: 20px 0;
 				width: 400px;
 			}
 		}
