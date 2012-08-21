@@ -1,6 +1,5 @@
 body {
 	background: white;
-	text-align:left;
 	margin: 0;
 	padding:0;
 	text-align:center;
@@ -15,5 +14,11 @@ body {
 	}
 	img {
 		border: 0; // ie fix
+	}
+	section#latest {
+		article.sport .category 			{ color: $category-sport-color; }
+		article.luxembourg .category 		{ color: $category-luxembourg-color; }
+		article.lifestyle .category 		{ color: $category-lifestyle-color; }
+		article.internatinal .category 		{ color: $category-international-color; }
 	}
 }
