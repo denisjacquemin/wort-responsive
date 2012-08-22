@@ -1,5 +1,5 @@
-.breakpoint-phone body {
-	div#page > header {
+@media #{$breakpoint-phone} {
+	 body div#page > header {
 		background: url('../images/olympia2012s.jpg') 5px 17px no-repeat;
 		div#top {
 			span#subscription {
@@ -76,10 +76,7 @@
 	
 	div#page div#content {
 		section#latest {
-			article.sport .category 			{ color: $category-sport-color; }
-			article.luxembourg .category 		{ color: $category-luxembourg-color; }
-			article.lifestyle .category 		{ color: $category-lifestyle-color; }
-			article.internatinal .category 	{ color: $category-international-color; }
+			
 			article {
 				border-bottom: 1px dotted black;
 				padding: 20px 0;

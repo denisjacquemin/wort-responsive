@@ -1,5 +1,5 @@
-.breakpoint-widescreen body {
-	div#page {
+@media #{$breakpoint-widescreen}  {
+	body div#page {
 		width: 1400px;
 		div#content {
 			section#categories {

@@ -1,4 +1,4 @@
-.breakpoint-desktop-screen {
+@media #{$breakpoint-desktop}  {
 	// 2 columns layout
 	body {
 		div#page > header {
