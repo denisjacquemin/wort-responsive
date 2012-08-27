@@ -16,8 +16,7 @@
 			  nope: ['@routes.Assets.at("javascripts/vendor/matchMedia.js")']
 			}]);
 		</script>
-		<script src="@routes.Assets.at("javascripts/vendor/jquery-1.7.1.min.js")"></script>
-		<script src="@routes.Assets.at("javascripts/vendor/metaquery.jquery.min.js")"></script>
+		<script src="@routes.Assets.at("javascripts/vendor/metaquery.js")"></script>
 		<title>Wort.lu</title>
   	</head>
 	<body>
@@ -33,7 +32,7 @@
 					</span>
 					<span id="language"><ul><li>Deutsche Ausgabe <img src="assets/images/de/flag.gif"></li><li><img src="assets/images/fr/flag.gif"> Edition francophone</li></ul></span>
 				</div>
-				<img id="logo" src="assets/images/logo.gif">
+				<img id="logo" data-mq-src="assets/images/responsive/logo.gif">
 				<time datetime="2012-07-26">Thursday, 26 July, 2012</time>
 				<nav id="main-nav">
 					<span><a href="#" id="sections-nav">Sections</a></span>
@@ -249,6 +248,7 @@
 				<img id="footerlogo" src="assets/images/footer.png" alt="Luxembourg Wort - We inform Luxembourg">
 			</footer>
 		</div>
+		<script src="@routes.Assets.at("javascripts/vendor/jquery-1.7.1.min.js")"></script>
 		<script src="@routes.Assets.at("javascripts/nav.min.js")"></script>
 	</body>
 </html>
